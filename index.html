@@ -12,8 +12,8 @@
           href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%2C300&#038;ver=4.4.1' type='text/css'
           media='all'/>
     <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css' media='all'/>
-    <link href='css/jquery.fancybox-1.3.4.css' rel='stylesheet' type='text/css' media='all'/>
     <link href='css/animate.css' rel='stylesheet' type='text/css' media='all'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css"/>
     <link href='css/font-awesome.min.css' rel='stylesheet' type='text/css' media='all'/>
     <link href='css/nivoslider.min.css' rel='stylesheet' type='text/css' media='all'/>
     <link href='css/owl.carousel.min.css' rel='stylesheet' type='text/css' media='all'/>
@@ -130,7 +130,7 @@
 
                 <div class="right-header-middle-content">
                     <!-- HEADER CART -->
-                    <div class="shopping-cart shopping-cart-wrapper ">
+                    <div class="shopping-cart shopping-cart-wrapper btn-hover-menutop ">
                         <div class="wd_tini_cart_wrapper">
                             <div class="wd_tini_cart_control ">
 
@@ -151,16 +151,46 @@
 
                             </div>
 
-                            <div class="cart_dropdown drop_down_container" style="display: none;">
+                            <div class="cart_dropdown drop_down_container cart-downmenu-top">
                                 <div class="dropdown_header">
-                                    <h4><a href="#">shopping bag</a>
-                                    </h4>
-                                    <span class="cart_dropdown_size size_empty">
-										<label>You have no items in your shopping cart.</label>
-									</span>
+                                    <h4 class="shopping-cart-title">SHOPPTING CART</h4>
+                                    <div class="list-cart">
+                                        <ul class="cart-item-view">
+                                            <li>
+                                                <div class="images">
+                                                    <a href="#"><img src="images/product-31-300x300.jpg" alt="img"></a>
+                                                </div>
+                                                <div class="details">
+                                                    <p class="product-name">
+                                                        Default Simple Product
+                                                    </p>
+                                                    <p class="price">
+                                                        $500
+                                                    </p>
+                                                    <p class="quanlity">x2</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="images">
+                                                    <a href="#"><img src="images/product-31-300x300.jpg" alt="img"></a>
+                                                </div>
+                                                <div class="details">
+                                                    <p class="product-name">
+                                                        Default Simple Product
+                                                    </p>
+                                                    <p class="price">
+                                                        $500
+                                                    </p>
+                                                    <p class="quanlity">x2</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
 
                             </div>
+
+
                         </div>
                         <span class="visible-phone cart-drop-icon"></span>
                     </div>
@@ -213,6 +243,11 @@
                     </div>
                     <nav id="navWrap" class="nav navSiteMain">
                         <ul class="nav-navbar notStyle clearfix">
+                            <li class="logo-scroll-destop" style="display: none;">
+                                <a href="#">
+                                    <img src="images/logo.png" alt="logo">
+                                </a>
+                            </li>
 
                             <li class="active">
                                 <a href="/" class="" title="Trang chủ">
@@ -348,14 +383,13 @@
                                 </div>
 
                             </li>
-
                             <li class="">
                                 <a href="/pages/lien-he" class="" title="Liên hệ">
                                     <span>Liên hệ</span>
                                 </a>
                             </li>
 
-                            <li class="hidden-xs">
+                            <li class="hidden-xs scroll-search-hidden">
                                 <div class="header_search">
                                     <span class="bt_search search_close"></span>
                                     <form role="search" method="get">
@@ -371,6 +405,77 @@
                                             </div>
                                         </div>
                                     </form>
+                                </div>
+                            </li>
+
+                            <li class="show-cart-scroll" style="display: none;">
+                                <div class="right-header-middle-content">
+                                    <!-- HEADER CART -->
+                                    <div class="shopping-cart shopping-cart-wrapper ">
+                                        <div class="wd_tini_cart_wrapper">
+                                            <div class="wd_tini_cart_control ">
+
+                                                    <span class="cart_size">
+                                                    <a href="#">
+                                                            <span class="ic-bag"></span>
+                                                            <span class="cart_size_value_head">
+                                                            <span class="cart_text">
+                                                                <span class="text">My cart</span>
+                                                            <span class="total"><span class="amount">$0</span></span>
+                                                            </span>
+                                                            <span class="cart_item">
+                                                                <span class="num_item">0</span>
+                                                            </span>
+                                                            </span>
+                                                    </a>
+                                                    </span>
+
+                                            </div>
+
+                                            <div class="cart_dropdown drop_down_container cart-menumain">
+                                                <div class="dropdown_header">
+                                                    <h4 class="shopping-cart-title">SHOPPTING CART</h4>
+                                                    <div class="list-cart">
+                                                        <ul class="cart-item-view">
+                                                            <li>
+                                                                <div class="images">
+                                                                    <a href="#"><img src="images/product-31-300x300.jpg"
+                                                                                     alt="img"></a>
+                                                                </div>
+                                                                <div class="details">
+                                                                    <p class="product-name">
+                                                                        Default Simple Product
+                                                                    </p>
+                                                                    <p class="price">
+                                                                        $500
+                                                                    </p>
+                                                                    <p class="quanlity">x2</p>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="images">
+                                                                    <a href="#"><img src="images/product-31-300x300.jpg"
+                                                                                     alt="img"></a>
+                                                                </div>
+                                                                <div class="details">
+                                                                    <p class="product-name">
+                                                                        Default Simple Product
+                                                                    </p>
+                                                                    <p class="price">
+                                                                        $500
+                                                                    </p>
+                                                                    <p class="quanlity">x2</p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <span class="visible-phone cart-drop-icon"></span>
+                                    </div>
+                                    <!-- END HEADER CART -->
                                 </div>
                             </li>
 
@@ -2184,7 +2289,8 @@
                                                         <div class="item-product-hot-review">
                                                             <div class="product-images">
                                                                 <div class="images-main">
-                                                                    <a href="#">
+                                                                    <a data-fancybox="gallery"
+                                                                       href="images/product-25-480x480.jpg">
                                                                         <img src="images/product-25-480x480.jpg"
                                                                              alt="images">
                                                                     </a>
@@ -2222,22 +2328,26 @@
                                                 <div class="product-detail-more">
                                                     <div class="row">
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery"
+                                                               href="images/product-26-100x100.jpg">
                                                                 <img src="images/product-26-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery"
+                                                               href="images/product-24-100x100.jpg">
                                                                 <img src="images/product-24-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery"
+                                                               href="images/product-57-480x480.jpg">
                                                                 <img src="images/product-57-480x480.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery"
+                                                               href="images/product-26-100x100.jpg">
                                                                 <img src="images/product-26-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
@@ -2474,7 +2584,8 @@
                                                         <div class="item-product-hot-review">
                                                             <div class="product-images">
                                                                 <div class="images-main">
-                                                                    <a href="#">
+                                                                    <a data-fancybox="gallery2"
+                                                                       href="images/product-2-480x480.jpg">
                                                                         <img src="images/product-2-480x480.jpg"
                                                                              alt="images">
                                                                     </a>
@@ -2512,22 +2623,26 @@
                                                 <div class="product-detail-more">
                                                     <div class="row">
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery2"
+                                                               href="images/product-26-100x100.jpg">
                                                                 <img src="images/product-26-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery2"
+                                                               href="images/product-26-100x100.jpg">
                                                                 <img src="images/product-24-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery2"
+                                                               href="images/product-26-100x100.jpg">
                                                                 <img src="images/product-57-480x480.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery2"
+                                                               href="images/product-26-100x100.jpg">
                                                                 <img src="images/product-26-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
@@ -2766,7 +2881,8 @@
                                                         <div class="item-product-hot-review">
                                                             <div class="product-images">
                                                                 <div class="images-main">
-                                                                    <a href="#">
+                                                                    <a data-fancybox="gallery3"
+                                                                       href="images/product-49-480x480.jpg">
                                                                         <img src="images/product-49-480x480.jpg"
                                                                              alt="images">
                                                                     </a>
@@ -2804,22 +2920,26 @@
                                                 <div class="product-detail-more">
                                                     <div class="row">
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery3"
+                                                               href="images/product-26-100x100.jpg">
                                                                 <img src="images/product-26-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery3"
+                                                               href="images/product-24-100x100.jpg">
                                                                 <img src="images/product-24-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery3"
+                                                               href="images/product-57-480x480.jpg">
                                                                 <img src="images/product-57-480x480.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery3"
+                                                               href="images/product-26-100x100.jpg">
                                                                 <img src="images/product-26-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
@@ -3058,7 +3178,8 @@
                                                         <div class="item-product-hot-review">
                                                             <div class="product-images">
                                                                 <div class="images-main">
-                                                                    <a href="#">
+                                                                    <a data-fancybox="gallery4"
+                                                                       href="images/product-28-480x480.jpg">
                                                                         <img src="images/product-28-480x480.jpg"
                                                                              alt="images">
                                                                     </a>
@@ -3096,22 +3217,26 @@
                                                 <div class="product-detail-more">
                                                     <div class="row">
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery4"
+                                                               href="images/product-26-100x100.jpg">
                                                                 <img src="images/product-26-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery4"
+                                                               href="images/product-24-100x100.jpg">
                                                                 <img src="images/product-24-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery4"
+                                                               href="images/product-57-480x480.jpg">
                                                                 <img src="images/product-57-480x480.jpg" alt="thumb">
                                                             </a>
                                                         </div>
                                                         <div class="col-xs-3 col-md-3 item-thumb">
-                                                            <a href="#">
+                                                            <a data-fancybox="gallery4"
+                                                               href="images/product-26-100x100.jpg">
                                                                 <img src="images/product-26-100x100.jpg" alt="thumb">
                                                             </a>
                                                         </div>
@@ -3761,6 +3886,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.nivo.slider.js"></script>
 <!--<script src="js/jquery.fancybox-1.3.4.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 <script src="js/parallax.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/scripts.js"></script>
