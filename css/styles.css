@@ -1523,6 +1523,9 @@ FOOTER*/
     .show-cart-scroll {
         display: none !important;
     }
+    .logo-scroll-destop{
+        display: none !important;
+    }
 }
 
 #content-section .block-policy .feature-poli {
