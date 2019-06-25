@@ -22,9 +22,7 @@ $(document).ready(function () {
     }
 });
 
-$('[data-fancybox]').fancybox({
-    loop: true
-});
+
 
 
 jQuery('.wd_tini_account_wrapper').hover(
@@ -317,3 +315,9 @@ function changePos() {
         $('.logo-scroll-destop').hide();
     }
 }
+
+
+$(".fancybox").fancybox({
+    'openEffect'    : 'elastic',
+    'closeEffect'   : 'elastic'
+});
