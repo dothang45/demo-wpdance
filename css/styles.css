@@ -3084,6 +3084,10 @@ CONTENT*/
     z-index: 99;
 }
 
+.owl-quick-view{
+    margin-top:10px;
+}
+
 .logo-scroll-destop {
     display: none;
     position: absolute;
@@ -3169,16 +3173,12 @@ CONTENT*/
     z-index: 9999;
     margin-top: -5px;
 }
-.btn-hover-menutop:hover .cart-downmenu-top{
-    display: block;
-}
+
 
 .cart-menumain{
     display: none;
     z-index: 9999;
-}
-.show-cart-scroll:hover .cart-menumain{
-    display: block;
+    margin-top:-2px;
 }
 
 
