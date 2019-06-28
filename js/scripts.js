@@ -207,8 +207,10 @@ $(".btn-quickview").click(function() {
 });
 
 $(document).ready(function() {
-  $(".owl-quick-view .item img").click(function() {
-    var images = $(this).attr("src");
+  $(".owl-quick-view .item").on("click", function() {
+    var images = $(this)
+      .find("img")
+      .attr("src");
     $(".greally-image-quick .image img").attr("src", images);
     $(".greally-image-quick .image a").attr("href", images);
     $(".cloud-zoom, .cloud-zoom-gallery").CloudZoom();
@@ -223,7 +225,7 @@ $(document).ready(function() {
     $(".owl-quick-view").owlCarousel({
       items: 4,
       nav: true,
-      loop: true,
+      loop: false,
       margin: 20,
       autoplay: false,
       responsive: {
