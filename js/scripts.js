@@ -202,12 +202,13 @@ $(".collection-sidebar-2 .tab-item").click(function() {
 });
 
 //quickview
-$(".btn-quickview").click(function() {
+
+$('.product-item').on('click', '.btn-quickview', function () {
   $("#quickview-modal").modal();
 });
 
 $(document).ready(function() {
-  $(".owl-quick-view .item").on("click", function() {
+  $('.owl-quick-view').on('click', '.item', function () {
     var images = $(this)
       .find("img")
       .attr("src");
@@ -225,7 +226,7 @@ $(document).ready(function() {
     $(".owl-quick-view").owlCarousel({
       items: 4,
       nav: true,
-      loop: false,
+      loop: true,
       margin: 20,
       autoplay: false,
       responsive: {
